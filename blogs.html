@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechVision AI - Latest AI & Technology Blog</title>
+    <title>All Blogs - TechVision AI</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
@@ -15,8 +15,8 @@
                 <span class="logo-text">TechVision AI</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="Index.html" class="nav-link active">Home</a></li>
-                <li><a href="blogs.html" class="nav-link">All Blogs</a></li>
+                <li><a href="Index.html" class="nav-link">Home</a></li>
+                <li><a href="blogs.html" class="nav-link active">All Blogs</a></li>
                 <li><a href="categories.html" class="nav-link">Categories</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -36,145 +36,30 @@
         <div class="blob blob-3"></div>
     </div>
 
-    <!-- Hero Section -->
-    <header class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Explore the Future of AI & Technology</h1>
-                <p class="hero-subtitle">Discover the latest breakthroughs in Agentic AI, Quantum Computing, MCP Servers, and cutting-edge technology innovations</p>
-                <div class="cta-buttons">
-                    <button class="cta-button primary">Start Reading</button>
-                    <button class="cta-button secondary">Explore Categories</button>
-                </div>
-            </div>
-            <div class="hero-animation">
-                <canvas id="heroCanvas"></canvas>
-            </div>
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>📰 All Blog Articles</h1>
+            <p>Explore our complete collection of AI, technology, and innovation articles</p>
         </div>
     </header>
 
-    <!-- Trending Section -->
-    <section class="trending-section">
+    <!-- Blog Search & Filter -->
+    <section class="blogs-section">
         <div class="container">
-            <h2 class="section-title">🔥 Trending Now</h2>
-            <div class="trending-slider">
-                <div class="trending-card" data-blog="agentic-ai">
-                    <div class="trending-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <span class="trending-badge">TRENDING #1</span>
-                    </div>
-                    <h3>Agentic AI: Autonomous Agents Revolution</h3>
-                    <p>AI agents that can reason, plan, and execute tasks independently...</p>
-                </div>
-                <div class="trending-card" data-blog="quantum-ai">
-                    <div class="trending-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <span class="trending-badge">TRENDING #2</span>
-                    </div>
-                    <h3>AI in Quantum Computers: Next Frontier</h3>
-                    <p>How quantum computing is transforming AI capabilities...</p>
-                </div>
-                <div class="trending-card" data-blog="mcp-servers">
-                    <div class="trending-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <span class="trending-badge">TRENDING #3</span>
-                    </div>
-                    <h3>MCP Servers: The New AI Protocol</h3>
-                    <p>Understanding Model Context Protocol and its impact...</p>
-                </div>
+            <div class="search-filter">
+                <input type="text" id="searchInput" placeholder="🔍 Search blogs..." class="search-box">
             </div>
-        </div>
-    </section>
 
-    <!-- Featured Blog Section -->
-    <section class="featured-section">
-        <div class="container">
-            <h2 class="section-title">⭐ Featured Article</h2>
-            <article class="featured-blog">
-                <div class="featured-image">
-                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                        <rect width="400" height="300" fill="url(#grad1)"/>
-                        <circle cx="200" cy="80" r="40" fill="#ffd700"/>
-                        <rect x="80" y="150" width="240" height="80" fill="#ffffff" opacity="0.2" rx="10"/>
-                        <text x="200" y="200" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold">GPT-5 Revolution</text>
-                    </svg>
-                    <span class="featured-badge">FEATURED</span>
-                </div>
-                <div class="featured-content">
-                    <span class="category-tag">AI Revolution</span>
-                    <h3>GPT-5 Redefines Natural Language Processing: The Game Changer</h3>
-                    <p>Discover how the latest generation of large language models is transforming industries. From healthcare to creative writing, explore the profound impact of GPT-5 on AI development.</p>
-                    <div class="blog-meta">
-                        <span class="author">👤 Alex Chen</span>
-                        <span class="read-time">⏱️ 12 min read</span>
-                        <span class="date">📅 July 22, 2024</span>
-                    </div>
-                    <a href="blog-detail.html?id=featured-gpt5" class="read-more">Read Full Article →</a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Categories Section -->
-    <section class="categories" id="categories">
-        <div class="container">
-            <h2 class="section-title">📚 Popular Categories</h2>
-            <div class="category-grid">
-                <div class="category-card" data-category="ai-ml">
-                    <div class="category-icon">🤖</div>
-                    <h3>AI & Machine Learning</h3>
-                    <p>Latest advancements in artificial intelligence</p>
-                    <span class="count">42 posts</span>
-                </div>
-                <div class="category-card" data-category="quantum">
-                    <div class="category-icon">⚛️</div>
-                    <h3>Quantum Computing</h3>
-                    <p>Quantum breakthroughs and innovations</p>
-                    <span class="count">18 posts</span>
-                </div>
-                <div class="category-card" data-category="dev-tools">
-                    <div class="category-icon">⚙️</div>
-                    <h3>Developer Tools & MCP</h3>
-                    <p>Model Context Protocol and dev tools</p>
-                    <span class="count">35 posts</span>
-                </div>
-                <div class="category-card" data-category="web-tech">
-                    <div class="category-icon">🌐</div>
-                    <h3>Web Technologies</h3>
-                    <p>Frontend, backend, and full-stack innovations</p>
-                    <span class="count">42 posts</span>
-                </div>
-                <div class="category-card" data-category="data-science">
-                    <div class="category-icon">📊</div>
-                    <h3>Data Science</h3>
-                    <p>Big data and analytics trends</p>
-                    <span class="count">31 posts</span>
-                </div>
-                <div class="category-card" data-category="security">
-                    <div class="category-icon">🔐</div>
-                    <h3>Cybersecurity</h3>
-                    <p>Security threats and solutions</p>
-                    <span class="count">25 posts</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest Blog Posts Section -->
-    <section class="blogs" id="blogs">
-        <div class="container">
-            <h2 class="section-title">📰 Latest Articles</h2>
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="ai">AI</button>
                 <button class="filter-btn" data-filter="quantum">Quantum</button>
                 <button class="filter-btn" data-filter="tools">Tools</button>
             </div>
+
             <div class="blog-grid">
-                <!-- Blog 1: Agentic AI -->
+                <!-- Blog 1 -->
                 <article class="blog-card" data-category="ai">
                     <div class="blog-image-container">
                         <svg class="blog-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +78,7 @@
                     <div class="blog-content">
                         <span class="category-tag">AI</span>
                         <h3>Agentic AI: Autonomous Agents That Think & Act</h3>
-                        <p>Explore how autonomous AI agents are evolving beyond chat interfaces to perform complex multi-step tasks independently and solve real-world problems.</p>
+                        <p>Explore how autonomous AI agents are evolving beyond chat interfaces to perform complex multi-step tasks independently.</p>
                         <div class="blog-meta">
                             <span class="author">👤 Sarah Johnson</span>
                             <span class="date">📅 July 21, 2024</span>
@@ -202,7 +87,7 @@
                     </div>
                 </article>
 
-                <!-- Blog 2: AI in Quantum Computers -->
+                <!-- Blog 2 -->
                 <article class="blog-card" data-category="quantum">
                     <div class="blog-image-container">
                         <svg class="blog-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
@@ -221,7 +106,7 @@
                     <div class="blog-content">
                         <span class="category-tag">Quantum</span>
                         <h3>AI in Quantum Computers: Bridging Two Revolutions</h3>
-                        <p>Discover how quantum computing is amplifying AI capabilities and creating unprecedented computational possibilities for machine learning models.</p>
+                        <p>Discover how quantum computing is amplifying AI capabilities and creating unprecedented computational possibilities.</p>
                         <div class="blog-meta">
                             <span class="author">👤 Mike Rodriguez</span>
                             <span class="date">📅 July 20, 2024</span>
@@ -230,7 +115,7 @@
                     </div>
                 </article>
 
-                <!-- Blog 3: MCP Servers -->
+                <!-- Blog 3 -->
                 <article class="blog-card" data-category="tools">
                     <div class="blog-image-container">
                         <svg class="blog-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
@@ -249,7 +134,7 @@
                     <div class="blog-content">
                         <span class="category-tag">Tools</span>
                         <h3>MCP Servers: Understanding the Model Context Protocol</h3>
-                        <p>Learn how MCP servers are standardizing AI communication and enabling seamless integration between AI models and applications.</p>
+                        <p>Learn how MCP servers are standardizing AI communication and enabling seamless integration between AI models.</p>
                         <div class="blog-meta">
                             <span class="author">👤 Emma Wilson</span>
                             <span class="date">📅 July 19, 2024</span>
@@ -258,7 +143,7 @@
                     </div>
                 </article>
 
-                <!-- Blog 4: Multimodal AI -->
+                <!-- Blog 4 -->
                 <article class="blog-card" data-category="ai">
                     <div class="blog-image-container">
                         <svg class="blog-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
@@ -277,7 +162,7 @@
                     <div class="blog-content">
                         <span class="category-tag">AI</span>
                         <h3>Multimodal AI Models: Seeing, Hearing, Understanding</h3>
-                        <p>Explore how AI models processing text, images, video, and audio together are creating more intelligent and versatile applications.</p>
+                        <p>Explore how AI models processing text, images, video, and audio together are creating more intelligent applications.</p>
                         <div class="blog-meta">
                             <span class="author">👤 James Chen</span>
                             <span class="date">📅 July 18, 2024</span>
@@ -286,7 +171,7 @@
                     </div>
                 </article>
 
-                <!-- Blog 5: Vector Databases -->
+                <!-- Blog 5 -->
                 <article class="blog-card" data-category="tools">
                     <div class="blog-image-container">
                         <svg class="blog-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
@@ -308,7 +193,7 @@
                     <div class="blog-content">
                         <span class="category-tag">Tools</span>
                         <h3>Vector Databases: Powering AI Search at Scale</h3>
-                        <p>Understand how vector databases are becoming essential infrastructure for AI applications, enabling semantic search and similarity matching.</p>
+                        <p>Understand how vector databases are becoming essential infrastructure for AI applications.</p>
                         <div class="blog-meta">
                             <span class="author">👤 Lisa Park</span>
                             <span class="date">📅 July 17, 2024</span>
@@ -317,7 +202,7 @@
                     </div>
                 </article>
 
-                <!-- Blog 6: Quantum Computing Breakthroughs -->
+                <!-- Blog 6 -->
                 <article class="blog-card" data-category="quantum">
                     <div class="blog-image-container">
                         <svg class="blog-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
@@ -338,7 +223,7 @@
                     <div class="blog-content">
                         <span class="category-tag">Quantum</span>
                         <h3>Quantum Computing Breakthroughs: 2024 & Beyond</h3>
-                        <p>Explore the latest quantum computing achievements and why major tech companies are betting billions on this revolutionary technology.</p>
+                        <p>Explore the latest quantum computing achievements and why major tech companies are betting billions.</p>
                         <div class="blog-meta">
                             <span class="author">👤 David Kumar</span>
                             <span class="date">📅 July 16, 2024</span>
@@ -347,7 +232,7 @@
                     </div>
                 </article>
 
-                <!-- Blog 7: LLM Fine-tuning -->
+                <!-- Blog 7 -->
                 <article class="blog-card" data-category="ai">
                     <div class="blog-image-container">
                         <svg class="blog-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
@@ -367,7 +252,7 @@
                     <div class="blog-content">
                         <span class="category-tag">AI</span>
                         <h3>Fine-tuning Large Language Models: Customization Guide</h3>
-                        <p>Learn how to customize large language models for your specific use cases and improve performance on domain-specific tasks.</p>
+                        <p>Learn how to customize large language models for your specific use cases.</p>
                         <div class="blog-meta">
                             <span class="author">👤 Rachel Martinez</span>
                             <span class="date">📅 July 15, 2024</span>
@@ -376,7 +261,7 @@
                     </div>
                 </article>
 
-                <!-- Blog 8: AI Governance -->
+                <!-- Blog 8 -->
                 <article class="blog-card" data-category="ai">
                     <div class="blog-image-container">
                         <svg class="blog-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
@@ -395,7 +280,7 @@
                     <div class="blog-content">
                         <span class="category-tag">AI</span>
                         <h3>AI Governance & Ethics: Responsible Innovation</h3>
-                        <p>Navigate the ethical considerations and governance frameworks essential for responsible AI development and deployment.</p>
+                        <p>Navigate the ethical considerations and governance frameworks essential for responsible AI development.</p>
                         <div class="blog-meta">
                             <span class="author">👤 Tom Bradley</span>
                             <span class="date">📅 July 14, 2024</span>
@@ -404,7 +289,7 @@
                     </div>
                 </article>
 
-                <!-- Blog 9: Edge AI -->
+                <!-- Blog 9 -->
                 <article class="blog-card" data-category="tools">
                     <div class="blog-image-container">
                         <svg class="blog-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
@@ -425,7 +310,7 @@
                     <div class="blog-content">
                         <span class="category-tag">Tools</span>
                         <h3>Edge AI: Running AI Models on Devices</h3>
-                        <p>Discover how edge AI is enabling real-time inference on IoT devices and mobile phones without cloud dependency.</p>
+                        <p>Discover how edge AI is enabling real-time inference on IoT devices and mobile phones.</p>
                         <div class="blog-meta">
                             <span class="author">👤 Kevin Wong</span>
                             <span class="date">📅 July 13, 2024</span>
@@ -499,5 +384,23 @@
     </footer>
 
     <script src="Script.js"></script>
+    <script>
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const blogCards = document.querySelectorAll('.blog-card');
+            
+            blogCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
