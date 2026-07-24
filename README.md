@@ -1,6 +1,6 @@
-# 🚀 TechVision AI - Modern Tech Blog Website
+# 🚀 AI-Powered Applications Project
 
-A modern, responsive AI and technology blog website featuring the latest news and insights on AI, machine learning, web development, and cutting-edge technology.
+A modern project website focused on building AI-powered applications using Python, machine learning, and other AI technologies to solve real-world problems.
 
 ## 📋 Features
 
@@ -45,9 +45,9 @@ A modern, responsive AI and technology blog website featuring the latest news an
 
 ```
 blog/
-├── Index.html          # Main HTML file with complete structure
-├── Style.css           # Comprehensive CSS with animations and responsive design
-├── Script.js           # Interactive JavaScript functionality
+├── Index.html          # Main project page with the app interface
+├── Style.css           # Styling for the user interface
+├── Script.js           # Interactive frontend behavior
 └── README.md          # This documentation file
 ```
 
@@ -157,18 +157,14 @@ Edit the CSS variables in `Style.css`:
 ```
 
 ### Add Blog Posts
-Add new blog cards in the `.blog-grid` section with:
-```html
-<article class="blog-card">
-    <div class="blog-image" style="background: linear-gradient(...)"></div>
-    <div class="blog-content">
-        <!-- Content here -->
-    </div>
-</article>
+Add new content sections in the project structure with:
+```python
+def show_blog_card():
+    print("New blog content")
 ```
 
 ### Modify Content
-Edit the HTML content directly in `Index.html` while preserving the structure and classes.
+Edit the Python-based project content directly in the relevant files while preserving the overall structure and logic.
 
 ## 🔗 Navigation Structure
 
@@ -186,7 +182,7 @@ Edit the HTML content directly in `Index.html` while preserving the structure an
 
 ## 🏆 Best Practices Implemented
 
-✅ Semantic HTML5 structure
+✅ Structured Python-friendly project layout
 ✅ CSS Grid and Flexbox layouts
 ✅ Mobile-first responsive design
 ✅ Accessibility considerations
