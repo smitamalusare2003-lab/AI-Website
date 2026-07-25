@@ -1,6 +1,13 @@
 # 🚀 AI-Powered Applications Project
 
-A modern project website focused on building AI-powered applications using Python, machine learning, and other AI technologies to solve real-world problems.
+A modern, advanced-level project website built with Python and focused on creating a fully working Lift Maintenance Management System. The project is designed to manage lift maintenance activities, track records, schedule services, and generate reports using a professional Python-based structure.
+
+## 🧠 Project Focus
+
+- Built using Python as the core programming language
+- Uses advanced machine learning and AI techniques to create intelligent solutions
+- Focuses on practical applications for automation, analysis, and smart decision-making
+- Organizes project files in a clean, scalable, and professional structure
 
 ## 📋 Features
 
